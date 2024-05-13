@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="websitefav.ico">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <ul>
+                <li><a href="filehere">Home</a></li>
+                <li><a href="#filehere">About</a></li>
+                <li><a href="#filehere">Service</a></li>
+                <li style="float:right"><a class="active" href="#filehere">Contact</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar">
+        <a class="active" href="#filehere">File Link 1</a>
+        <a href="#filehere">File Link 2</a>
+        <a href="#filehere">File Link 3</a>
+        <a href="#filehere">File Link 4</a>
+      </div>
+
+    
+      <div class="main-content">
+        <center><h2>MAIN CONTENT</h2></center>
+        <p><b>Combinators</b></p>
+        <p>Using CSS combinators, we can combine selectors to select DOM nodes based on their relationship to other elements within the document node tree. This combining of selectors with combinators creates complex selectors.</p>
+        <p><b>Descendant Combinator</b></p>
+        <p>The descendant combinator, denoted with one or more spaces, selects nodes that are descendants of the first element. For example, div span will match all <span> elements that are inside a <div> element.</p>
+        <p><b>Child Combinator</b></p>
+        <p>The child combinator is more specific than the descendant combinator. Denoted with the greater than character (>), the child combinator selects nodes that are direct children of the first element. Comparing with our previous example, div > span will match only the <span> elements that are direct children of a <div> element.</p>
+        <p><b>Child Combinator</b></p>
+        <p></p>
+        <p><b>Subsequent-sibling Combinator</b></p>
+        <p>In addition to descendant selectors, CSS also enables selecting elements based on their siblings. The subsequent-sibling combinator, denoted with a tilde (~), selects siblings. Given A ~ B, all elements matching B will be selected if they are preceded by A, provided both A and B share the same parent. For example, h2 ~ p will match all <p> elements that follow an h2, immediately or not.</p>
+        <p><b>Next-sibling Combinator</b></p>
+        <p>The next-sibling combinator, denoted by the plus symbol (+), is similar to the subsequent-sibling. However, given A + B, it only matches B if B is immediately preceded by A, with both sharing the same parent. Amending our previous example, h2 + p will match only the single <p> element that immediately follows an < h2 > element.</p>
+       
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <footer>
+        <p style="float: right;">&copy; 2024 My Webpage. All rights reserved.</p>
+    </footer>
+
+</div>
+</body>
+</html>
